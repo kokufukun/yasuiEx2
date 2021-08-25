@@ -38,11 +38,11 @@ class ViewController: UIViewController {
             //エラー文
             resultLabel.text = "0での除算はできません"
 
-        //実行されるとき
+        //実行できるとき
         }else{
 
             //indexが、0,1,2,3、でそれぞれ、加算、減算、乗算、除算。
-            //defaultは絶対に使わないが記述しないと構文エラーになる。
+            //defaultは使うことはない。しかし記述しないと構文エラーになる。
             switch index {
             case 0:
                 result = value1 + value2

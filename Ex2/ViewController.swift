@@ -14,13 +14,13 @@ class ViewController: UIViewController {
     @IBOutlet private weak var number2TextField: UITextField!
 
     //セグメントコントロール（選択 → ボタンで実行）
-    @IBOutlet weak var selectCalcSegmentedControl: UISegmentedControl!
+    @IBOutlet private weak var selectCalcSegmentedControl: UISegmentedControl!
 
     //結果ラベル。初期表示は0.0
     @IBOutlet private weak var resultLabel: UILabel!
 
     //計算実行ボタン
-    @IBAction func runCalcButton(_ sender: Any) {
+    @IBAction private func runCalcButton(_ sender: Any) {
 
         //セグメントコントロールのindexを取得
         let index = selectCalcSegmentedControl.selectedSegmentIndex
